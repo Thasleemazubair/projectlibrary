@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Signup</title>
+</head>
+<body>
+{% include "header.html" %}
+<br>
+    <h1>Admin Signup</h1>
+<form method="post">
+     {% csrf_token %}
+<!--     {{ form.as_p }}-->
+
+
+
+
+    <input type="hidden" name="csrmiddlewaretoken" value="random-csrf-token-here">
+    <p>
+       <label for="id_firstname">Firstname:</label>
+        <br>
+       <input type="text" name="firstname" maxlength="30" required id="id_firstname">
+    </p>
+    <p>
+       <label for="id_lastname">Lastname:</label>
+        <br>
+       <input type="text" name="lastname" maxlength="30"  required id="id_lastname">
+    </p>
+    <p>
+       <label for="id_username">Username:</label>
+        <br>
+       <input type="text" name="username" maxlength="150" autofocus required id="id_username">
+    </p>
+    <p>
+       <label for="id_password">Password:</label>
+        <br>
+       <input type="text" name="username" maxlength="150" autofocus required id="id_password">
+    </p>
+    <button type="submit">Sign Up</button>
+</body>
+</html>

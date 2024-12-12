@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+
+
+      .navbar{
+      background-color:black;
+      font-family: calibri;
+      padding-right: 15px;
+      padding-left:30px;
+
+      }
+       .navdiv{
+      display: flex;
+
+      justify-content: space-between;
+      }
+      .logo a{
+      font-size:35px;
+      font-weight:600;
+      color:white;
+      text-decoration:none;
+      }
+
+      li{
+      list-style:none;
+      display:inline-block;
+
+      }
+
+      li a{
+      color:white;
+      font-size:18px;
+      font-weight:bold;
+      margin-right:25px;
+      text-decoration:none;
+      }
+
+
+
+    .button{
+    float:right;
+    margin:20px;
+
+
+    }
+
+
+   </style>
+</head>
+<body>
+{% load static %}
+
+<nav class="navbar">
+  <div class="navdiv">
+    <div class="logo"><a href="#">Library Management</a></div>
+    <ul>
+      <li><a href="/header">Home</a></li>
+      <li><a href="/adminclick">Admin</a></li>
+      <li><a href="/studentclick">Students</a></li>
+
+    </ul>
+  </div>
+  <div class="button">
+    <ul>
+     <li><a href="/aboutusclick">About us</a></li>
+      <li><a href="/contactusclick">Contact us</a></li>
+     </ul>
+
+  </div>
+</nav>
+
+
+
+</body>
+</html>
